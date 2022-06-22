@@ -1,6 +1,8 @@
-const accountSid = 'AC8e39f82b93e604ec79ebf55d820675ac';
-const authToken = '4a47f952ea2cffc85844f59e150f45c4';
-const client = require('twilio')(accountSid, authToken);
+import twilio from './node_module/twilio';
+
+const accountSid = "AC8e39f82b93e604ec79ebf55d820675ac";
+const authToken = "4a47f952ea2cffc85844f59e150f45c4"
+const client = twilio(accountSid, authToken);
 
 
 function sendTextMessage (){
@@ -37,5 +39,3 @@ document.querySelector("#files").addEventListener("change", (e) => { //CHANGE EV
     }
 });
 
-
-console.log('Hello')
